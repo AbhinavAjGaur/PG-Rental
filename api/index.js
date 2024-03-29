@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import userRouter from './routes/user.route.js';
 dotenv.config();
 
 mongoose.connect(process.env.mongo).then(()=>{
@@ -17,4 +18,6 @@ app.listen(3000, ()=>{
     }
 );
 
-// youtube timestamp : 1:06:13
+app.use("/api/user", userRouter);
+
+//timestamp : 1:06:13

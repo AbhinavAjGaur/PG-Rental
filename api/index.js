@@ -19,5 +19,9 @@ app.listen(3000, ()=>{
 );
 
 app.use("/api/user", userRouter);
+// app.get('/test', (req, res)=>{
+//     res.json({
+//         message : 'hello world',
+//     });
+// })
 
-//timestamp : 1:06:13

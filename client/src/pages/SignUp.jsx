@@ -1,6 +1,7 @@
 import { data } from 'autoprefixer';
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import OAuth from '../components/OAuth';
 
 
 export default function SignUp() {
@@ -52,6 +53,7 @@ export default function SignUp() {
         <button disabled ={loading} className='border rounded-lg p-3 bg-slate-700 text-white uppercase hover:opacity-90 disabled:placeholder-opacity-80'>
           {loading ? 'Loading...' : 'Sign Up'}
           </button>
+          <OAuth/>
       </form>
       <div className='flex gap-2 mt-5'>
         <p>Have an account?</p>
